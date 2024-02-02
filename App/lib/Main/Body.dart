@@ -41,11 +41,10 @@ class _BodyState extends State<Body> {
                     Expanded(
                       child: GridView.count(
                         physics: ScrollPhysics(),
-                        crossAxisCount: 1,
+                        crossAxisCount: 2,
                         crossAxisSpacing: 4.0,
                         mainAxisSpacing: 4.0,
-                        padding: EdgeInsets.fromLTRB(30.0, 10.0, 30.0, 10.0),
-                        childAspectRatio: (1 / .3),
+                        childAspectRatio: (1 / .5),
                         children: <Widget>[
                           OptionItem('Opción 1', 0, widget.acces_token),
                           OptionItem('Opción 2', 1, widget.acces_token),

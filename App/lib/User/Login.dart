@@ -32,7 +32,8 @@ class _LoginFormState extends State<LoginForm> {
       'correo': _emailController.text,
       'contraseña': _passwordController.text
     };
-    if (user_login['mail'] == 'root') {
+    print(user_login['correo']);
+    if (user_login['correo'] == 'root') {
       Navigator.push(
         context,
         MaterialPageRoute(
